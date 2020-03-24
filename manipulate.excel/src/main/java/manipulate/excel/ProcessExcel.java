@@ -22,7 +22,7 @@ public class ProcessExcel {
 	{
 	try {
 		FileInputStream file = new FileInputStream(
-				new File("D:\\IBM_359_ConcentrixCorp_Files\\JIRA\\CLCI\\Alisa-Task\\CLIC_BILLS_OVERFLOW_NewData.xlsx"));
+				new File("SourceFOlder-Excel-File-Location"));
 
 		// Create Workbook instance holding reference to .xlsx file
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
@@ -86,7 +86,7 @@ public class ProcessExcel {
 	public void enterDataInCell(Map stringData, Map stringData2) throws IOException
 	{
 		FileOutputStream file = new FileOutputStream(
-				new File("D:\\IBM_359_ConcentrixCorp_Files\\JIRA\\CLCI\\Alisa-Task\\CLIC_BILLS_OVERFLOWTest.xlsx"));
+				new File("SourceFile-Excel-File-Location"));
 
 		XSSFWorkbook workbook = new XSSFWorkbook();
 		
